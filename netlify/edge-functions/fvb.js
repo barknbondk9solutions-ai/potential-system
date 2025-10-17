@@ -143,6 +143,7 @@ function addSecurityHeaders(response) {
       "https://api.sunrise-sunset.org " +
       "https://api.weather.gov " +
       "https://client.crisp.chat " +
+      "wss://client.relay.crisp.chat "
       "https://core.service.elfsight.com " +
       "https://service-reviews-ultimate.elfsight.com " +
       "https://static.elfsight.com " +
