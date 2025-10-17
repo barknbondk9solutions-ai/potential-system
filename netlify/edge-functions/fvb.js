@@ -124,51 +124,51 @@ function addSecurityHeaders(response) {
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   response.headers.set("Permissions-Policy", "geolocation=(), microphone=(), camera=()");
 
-  response.headers.set("Content-Security-Policy",
-    "default-src 'self'; " +
-    "script-src 'self' 'unsafe-inline' 'report-sample' " +
-      "https://client.crisp.chat " +
-      "https://www.googletagmanager.com " +
-      "https://elfsightcdn.com " +
-      "https://universe-static.elfsightcdn.com " +
-      "https://asset-tidycal.b-cdn.net " +
-      "https://unpkg.com " +
-      "https://cdn.jsdelivr.net; " +
-    "style-src 'self' 'unsafe-inline' " +
-      "https://client.crisp.chat " +
-      "https://cdnjs.cloudflare.com " +
-      "https://fonts.googleapis.com " +
-      "https://unpkg.com; " +
-    "connect-src 'self' " +
-      "https://api.sunrise-sunset.org " +
-      "https://api.weather.gov " +
-      "https://client.crisp.chat " +
-      "wss://client.relay.crisp.chat "
-      "https://core.service.elfsight.com " +
-      "https://service-reviews-ultimate.elfsight.com " +
-      "https://static.elfsight.com " +
-      "https://tiles-a.basemaps.cartocdn.com " +
-      "https://tiles-b.basemaps.cartocdn.com " +
-      "https://tiles-c.basemaps.cartocdn.com " +
-      "https://tiles-d.basemaps.cartocdn.com; " +
-    "font-src 'self' " +
-      "https://client.crisp.chat " +
-      "https://cdnjs.cloudflare.com " +
-      "https://fonts.gstatic.com; " +
-    "img-src 'self' data: " +
-      "https://assets.zyrosite.com " +
-      "https://files.elfsightcdn.com " +
-      "https://app.petcareins.com " +
-      "https://www.propethero.com " +
-      "https://raw.githubusercontent.com; " +
-    "frame-src 'self'; " +
-    "object-src 'none'; " +
-    "base-uri 'self'; " +
-    "manifest-src 'self'; " +
-    "media-src 'self'; " +
-    "worker-src 'none'; " +
-    "frame-ancestors 'none';"
-  );
+response.headers.set("Content-Security-Policy",
+  "default-src 'self'; " +
+  "script-src 'self' 'unsafe-inline' 'report-sample' " +
+    "https://client.crisp.chat " +
+    "https://www.googletagmanager.com " +
+    "https://elfsightcdn.com " +
+    "https://universe-static.elfsightcdn.com " +
+    "https://asset-tidycal.b-cdn.net " +
+    "https://unpkg.com " +
+    "https://cdn.jsdelivr.net; " +
+  "style-src 'self' 'unsafe-inline' " +
+    "https://client.crisp.chat " +
+    "https://cdnjs.cloudflare.com " +
+    "https://fonts.googleapis.com " +
+    "https://unpkg.com; " +
+  "connect-src 'self' " +
+    "https://api.sunrise-sunset.org " +
+    "https://api.weather.gov " +
+    "https://client.crisp.chat " +
+    "wss://client.relay.crisp.chat " +
+    "https://core.service.elfsight.com " +
+    "https://service-reviews-ultimate.elfsight.com " +
+    "https://static.elfsight.com " +
+    "https://tiles-a.basemaps.cartocdn.com " +
+    "https://tiles-b.basemaps.cartocdn.com " +
+    "https://tiles-c.basemaps.cartocdn.com " +
+    "https://tiles-d.basemaps.cartocdn.com; " +
+  "font-src 'self' " +
+    "https://client.crisp.chat " +
+    "https://cdnjs.cloudflare.com " +
+    "https://fonts.gstatic.com; " +
+  "img-src 'self' data: " +
+    "https://assets.zyrosite.com " +
+    "https://files.elfsightcdn.com " +
+    "https://app.petcareins.com " +
+    "https://www.propethero.com " +
+    "https://raw.githubusercontent.com; " +
+  "frame-src 'self'; " +
+  "object-src 'none'; " +
+  "base-uri 'self'; " +
+  "manifest-src 'self'; " +
+  "media-src 'self'; " +
+  "worker-src 'none'; " +
+  "frame-ancestors 'none';"
+);
 
   response.headers.set("X-Robots-Tag", "index, follow");
   return response;
